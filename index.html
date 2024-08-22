@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label class="title">Shapes</label>
+                <ul class="options">
+
+                    <li class="option tool" id="rectangle">
+                        <img src="https://cdn-icons-png.flaticon.com/128/33/33848.png" alt="Rectangle">
+                        <span>Rectangle</span>
+                    </li>
+
+                    <li class="option tool" id="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/128/481/481078.png" alt="Circle">
+                        <span>Circle</span>
+                    </li>
+
+                    <li class="option tool" id="triangle">
+                        <img src="https://cdn-icons-png.flaticon.com/128/649/649738.png" alt="Triangle">
+                        <span>Triangle</span>
+                    </li>
+
+                    <li class="option tool" id="line">
+                        <img src="https://cdn-icons-png.flaticon.com/128/11040/11040446.png" alt="Line">
+                        <span>Line</span>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                     
+
+                        <label for="fill-color">Fill color</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title">Options</label>
+                <ul class="options">
+
+                    <li class="option active tool" id="brush">
+                        <img src="https://imgs.search.brave.com/NI2H_jkB9yeAWfD0eZLp61ivio1qZ3W83M-4c2leKfc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzkwLzcxLzk4/LzM2MF9GXzkwNzE5/ODk4X1hWRkk3dDVH/UnRkdW9zMmFudWNC/Z2JCSjU0RDJvUXRC/LmpwZw" alt="Brush Tool">
+                        <span>Brush</span>
+                    </li>
+
+                    <li class="option tool" id="eraser">
+                        <img src="https://imgs.search.brave.com/8zsTNvQeON2QOKPRGURVh0PClJfcFAEfPUIUns6FRQc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzMzLzA0LzA1/LzM2MF9GXzgzMzA0/MDUxMl9OT00wR0ha/UnViZDhLdEpucjk0/ckZ0SjdpNk03SGsz/Sy5qcGc" alt="Eraser Tool">
+                        <span>Eraser</span>
+                    </li>
+
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row colors">
+
+                <label class="title">Colors</label>
+                <ul class="options">
+
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#4A98F7">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row buttons">
+
+                <button class="clear-canvas">Clear Canvas</button>
+
+                <button class="save-img">Save As Image</button>
+                
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+
+</body>
+
+</html>
